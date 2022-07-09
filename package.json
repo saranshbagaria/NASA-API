@@ -1,0 +1,27 @@
+{
+    "name": "nasa",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "server": "npm run watch --prefix server",
+        "client": "npm start --prefix client",
+        "watch": "npm run client | npm run server",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "deploy": "npm run build --prefix client && npm start --prefix server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/saranshbagaria/NASA-API.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/saranshbagaria/NASA-API/issues"
+    },
+    "homepage": "https://github.com/saranshbagaria/NASA-API#readme",
+    "dependencies": {
+        "morgan": "^1.10.0"
+    }
+}
