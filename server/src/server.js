@@ -11,4 +11,4 @@ async function startServer() {
         console.log(`listening to port ${PORT}`);
     });
 }
-startServer();
+startServer()
