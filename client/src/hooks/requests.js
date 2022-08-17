@@ -1,7 +1,6 @@
 const api_url = 'http://localhost:8000'
 async function httpGetPlanets() {
-    const response = await fetch(`${api_url}/planets`)
-
+    const response = await fetch(`${api_url}/planets`);
     return await response.json();
 }
 
@@ -13,7 +12,7 @@ async function httpGetLaunches() {
         return a.flightNumber - b.flightNumber
     })
 }
-// Submit given launch data to launch system.
+// Submit given launch data  to launch system.
 async function httpSubmitLaunch(launch) {
     //console.log('here');
     try {
