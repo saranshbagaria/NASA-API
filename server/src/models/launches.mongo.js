@@ -20,8 +20,7 @@ const launchesSchema = new mongoose.Schema({
     // refer using primary key
     // this type of approach is suitable in sql joints
     target: {
-        type: String,
-        required: true
+        type: String
     },
     customers: {
         type: [String],
